@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="Account Details"
+        android:fontFamily="@font/fontt"
+        />
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Name"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/account_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Number"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount"
+        android:layout_margin="15dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btn_chane_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Change Acc. No."
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fonttt"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Request Loan"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/fonttt"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

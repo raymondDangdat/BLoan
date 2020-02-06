@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfo">
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/personalInfotoolbar"/>
+
+    <EditText
+        android:id="@+id/editBVN"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:visibility="gone"
+        android:hint="Enter BVN"
+        android:inputType="number"
+        android:maxLength="10"/>
+    <TextView
+        android:id="@+id/txtFullName"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:text="Blessing Makwul Mutnaan"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/buttonBvn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add BVN"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/editAccount"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:visibility="gone"
+        android:hint="Enter Account Number"
+        android:inputType="number"
+        android:maxLength="10"/>
+    <TextView
+        android:id="@+id/txtAccountName"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:text="Blessing Makwul Mutnaan"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/buttonAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add Account"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

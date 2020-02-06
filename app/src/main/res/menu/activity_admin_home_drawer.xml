@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_generate_bvn"
+            android:icon="@drawable/ic_lock"
+            android:title="Generate BVN" />
+        <item
+            android:id="@+id/nav_bvns"
+            android:icon="@drawable/ic_lock"
+            android:title="BVNs" />
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/ic_group"
+            android:title="Customers" />
+        <item
+            android:id="@+id/nav_loans"
+            android:icon="@drawable/ic_attach_money"
+            android:title="Loans" />
+        <item
+            android:id="@+id/nav_customer_complaints"
+            android:icon="@drawable/ic_customer_care"
+            android:title="Customer Complaints" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_change_password"
+                android:icon="@drawable/ic_lock"
+                android:title="Change Password" />
+            <!--<item-->
+                <!--android:id="@+id/nav_profile"-->
+                <!--android:icon="@drawable/ic_settings"-->
+                <!--android:title="Profile" />-->
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+</menu>

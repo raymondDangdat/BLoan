@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_loan"
+            android:icon="@drawable/ic_attach_money"
+            android:title="My Loan" />
+        <item
+            android:id="@+id/nav_request_loan"
+            android:icon="@drawable/ic_attach_money"
+            android:title="Request Loan" />
+        <item
+            android:id="@+id/nav_loan_history"
+            android:icon="@drawable/ic_history"
+            android:title="Loan History" />
+        <item
+            android:id="@+id/nav_customer_care"
+            android:icon="@drawable/ic_customer_care"
+            android:title="Customer Care" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_account"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_personal_info"
+            android:icon="@drawable/ic_account"
+            android:title="Add Personal Information" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="Sign Out" />
+    </group>
+</menu>

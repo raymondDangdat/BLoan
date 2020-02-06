@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comq.example.raymond.bloan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/log"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminHomeActivity"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".GenerateBVN"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".BVNs"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".CustomerHome"
+            android:label="@string/title_activity_customer_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignInActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OtpActivity"
+            android:parentActivityName=".SignInActivity" />
+        <activity
+            android:name=".MyAccountActivity"
+            android:parentActivityName=".CustomerHome" />
+        <activity
+            android:name=".PersonalInfo"
+            android:parentActivityName=".CustomerHome" />
+        <activity
+            android:name=".DisplayPersolInfo"
+            android:parentActivityName=".PersonalInfo" />
+        <activity
+            android:name=".CustomersActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".ContactCustomerCareActivity"
+            android:parentActivityName=".CustomerHome" />
+        <activity
+            android:name=".AdminCustomerCareActivity"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity
+            android:name=".AdminReplyComplaintActivity"
+            android:parentActivityName=".AdminCustomerCareActivity" />
+        <activity
+            android:name=".ApplyLoan"
+            android:parentActivityName=".CustomerHome" />
+        <activity
+            android:name=".LoanHistoryActivity"
+            android:parentActivityName=".CustomerHome" />
+        <activity
+            android:name=".AdminViewLoans"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity android:name=".MyLoanActivity"
+            android:parentActivityName=".CustomerHome"/>
+    </application>
+
+</manifest>

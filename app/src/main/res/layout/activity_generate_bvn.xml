@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateBVN">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/generate_bvn_toolbar">
+        </include>
+        <TextView
+            android:id="@+id/txtAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXXX"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btnGenerateAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Generate Account Number"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/txtBvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXXX"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btnGenerateBvn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Generate BVN"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/txtDoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surname"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:background="@drawable/edit_rounded"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_rounded"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/otherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Other Name"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_rounded"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:background="@drawable/edit_rounded"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>
